@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>
+      Web Client Development | Project 1
+    </title>
+
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo" style="display: inline-block"><img src="images/logo.svg"></div>
+
+      <div class="features" style="display: inline-block">Features
+        <img src="images/down-arrow.svg">
+      </div>
+      
+
+      <div class="skills" style="display: inline-block">
+        Skills
+        <img src="images/down-arrow.svg">
+      </div>
+      
+
+      <div class="careers" style="display: inline-block">Careers</div>
+      <div class="about" style="display: inline-block">About</div>
+    
+      <div class="register" style="display: inline-block"><button class="register-button">Register</button></div>
+
+      <div class="login" style="display: inline-block"><button class="login-button">Login</button></div>
+    </div>
+
+    <div class="main">
+
+      <div>
+        <p class="title">Become Web Developer</p><p class="body">Employers and clients usually expect web developers to have certain skills that demonstrate their ability to deliver on website requirements. If you're interested in a career as a web developer, these are some skills you can focus on to build a foundation for success.</p><p><button class="learn-more">Learn more</button></p>
+
+        <img src="images/diversity.svg" class="diversity">
+        <img src="images/javascript.svg" class="js">
+        <img src="images/www.svg" class="www">
+        <img src="images/woman.svg" class="woman">
+        <img src="images/web.svg" class="web">
+        <img src="images/computer.svg" class="computer">
+        <img src="images/cellphone.svg" class="cellphone">
+      </div>
+
+      <div class="side-pic"><img src="images/webdev.svg"></div>
+
+    </div>
+    
+    <div class="footer">
+      Challenge by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Wev developer course.</a>
+    </div>
+  </body>
+
+  <style>
+    *{
+      font-family: epilogue;
+    }
+
+    .features, .skills, .careers, .about{
+      font-weight: 500;
+      margin-top: 8px;
+      font-size: 12.8px;
+      color: gray;
+    }
+
+    .features, .skills, .careers, .about:hover{
+      cursor: pointer;
+    }
+
+    .features{
+      margin-left: 15px;
+    }
+
+    .logo, .features, .skills, .careers, .about{
+      margin-right: 30px;
+      float: left;
+    }
+
+    .login, .register{
+      margin-right: 10px;
+      float:right;
+    }
+
+    .login{
+      margin-top: 8px;
+    }
+
+    .register{
+      margin-top: 5px;
+    }
+    .login-button{
+      font-weight: 500;
+      background-color: white;
+      border: none;
+      color: gray;
+      font-size: 12.8px;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .register-button{
+      background-color: white;
+      color: gray;
+      border-color: gray;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      height: 25px;
+      width: 90px;
+      text-align: center;
+      font-size: 12.8px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .main{
+      margin-top:70px;
+      margin-bottom:90px;
+      margin-left: 160px;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+
+    .body{
+      line-height: 23px;
+      color: gray;
+    }
+
+    .title{
+      font-size:59px;
+      font-weight: 700;
+    }
+
+    .learn-more{
+      margin-top: 30px;
+      background-color: black;
+      border:none;
+      color:white;
+      border-radius: 10px;
+      border-color: black;
+      border-style: solid;
+      cursor: pointer;
+      padding-left:30px;
+      padding-right: 30px;
+      padding-top:12px;
+      padding-bottom: 12px;
+      font-size: 15px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .learn-more:hover{
+      background-color: white;
+      color:black;
+      border-color: black;
+      transition: 0.2s;
+    }
+    .nav{
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .side-pic{
+      margin-left: 300px;
+      width: 550px;
+    }
+    .diversity, .js, .www, .woman, .web, .computer, .cellphone{
+      width: 53px;
+    }
+
+    .footer{ 
+      font-size: 11px; text-align: center; 
+    }
+    .attribution a{ 
+      color: hsl(228, 45%, 45%); 
+    }
+    
+  </style>
+</html>
